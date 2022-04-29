@@ -28,7 +28,7 @@ header h1 {
 }
 
 header a {
-	position: absolute;
+	position: absolute;s
 	bottom: 0vh;
 	width: 100%;
 	color: white;
@@ -42,6 +42,7 @@ header a {
 	position: absolute;
 	min-height: 100%;
 	margin-top: 10px;
+	margin-left: 10px;
 }
 
 header a:hover span {
@@ -50,6 +51,7 @@ header a:hover span {
 
 p {
 	font-size: 200%;
+	padding: ;
 }
 
 a {
