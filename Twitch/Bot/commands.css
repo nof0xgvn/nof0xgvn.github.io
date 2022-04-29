@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "NoFutura";
-	src: url(Futura-MediumCondensed.ttf) format("truetype");
+	src: url(FuturaBT-MediumCondensed.otf) format("opentype");
 }
 
 * {
@@ -17,9 +17,9 @@ header {
 	z-index: 3;
 }
 
-header p {
+header table {
 	
-	font-size: 6vh;
+	font-size: 3vh;
 	color: white;
 	margin: 0;
 	position: absolute;
@@ -68,4 +68,3 @@ p {
 a {
 	font-size: 200%;
 }
-
