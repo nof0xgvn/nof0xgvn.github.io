@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "NoFutura";
-	src: url(FuturaBT-MediumCondensed.otf) format("opentype");
+	src: url(../../FuturaBT-MediumCondensed.otf) format("opentype");
 }
 
 * {
