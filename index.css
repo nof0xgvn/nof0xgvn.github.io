@@ -1,9 +1,3 @@
-@media only screen and (max-width: 799px) {
-    .hide {
-        display:none;
-    }
-}
-
 html {
 	scroll-behavior: smooth;
   }
@@ -106,4 +100,10 @@ a {
 	display: grid;
 	grid-template-columns: max-content auto auto;
 	grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+@media only screen and (max-width: 799px) {
+    .hide {
+        display:none;
+    }
 }
