@@ -1,12 +1,21 @@
-@font-face {
-	font-family: "NoFutura";
-	src: url(FuturaBT-MediumCondensed.otf) format("opentype");
+@media (max-width: 1799px) {
+    .hideslim {
+        display:none;
+    }
+}
+
+html {
+	scroll-behavior: smooth;
+  }
+
+::-webkit-scrollbar {
+	width: 0px;
 }
 
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "NoFutura";
+	font-family:  "Segoe UI", sans-serif;
 }
 
 header {
@@ -19,8 +28,9 @@ header {
 
 header h1 {
 	position: relative;
-	font-size: 10vh;
+	font-size: 8vh;
 	color: white;
+	font-weight: bold;
 	top: 10%;
 	width: 100%;
 	text-align: center;
@@ -40,27 +50,21 @@ header p {
 	position: relative;
 	color: white;
 	width: 100%;
-	font-size: 4vh;
+	font-size: 3.5vh;
+	font-weight: 600;
 	text-align: center;
 	top: 20%;
 }
 
 header a {
 	position: absolute;
-	bottom: 0vh;
+	bottom: .25vh;
 	width: 100%;
 	color: white;
-	font-size: 3vh;
+	font-size: 2.5vh;
+	font-weight: 600;
 	text-align: center;
 	text-decoration: none;
-}
-
-#stuff {
-	top: 100%;
-	position: absolute;
-	min-height: 100%;
-	margin-top: 10px;
-	margin-left: 10px;
 }
 
 header a:hover span {
@@ -73,4 +77,33 @@ p {
 
 a {
 	font-size: 200%;
+}
+
+#stuff {
+	top: 100%;
+	position: absolute;
+	background-color: #b782cf;
+	min-height: 100%;
+	width: 100%;
+}
+
+.presenting {
+	user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+	position: relative;
+	display: block;
+	margin-left: -55px;
+	height: 100%;
+	grid-area: 1 / 1 / span 7 / 1;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: max-content auto auto;
+	grid-template-rows: auto auto auto auto auto auto auto;
 }
