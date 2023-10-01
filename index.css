@@ -102,17 +102,31 @@ a {
 
 .container {
 	display: grid;
+	position: relative;
 	grid-template-columns: max-content max-content auto ;
 	grid-template-rows: auto auto auto auto auto;
 }
 
 .container a.socials{
 	align-self: center;
-	padding-left: 3vw;
+	padding-left: 2vw;
+	grid-column: 2;
 }
+
+.container a.socials:hover{
+	animation: bounce 0.25s ease-in-out 1;
+}
+
+@keyframes bounce {
+	0%,100% {scale: 1;}
+
+	50% {scale: 0.8;}
+}
+
 
 .container a.socials img {
 	height: 15vmin;
+	display: block;
 }
 
 .container a.text {
@@ -130,17 +144,46 @@ a {
 	display: none;
 }
 
-@media only screen and (max-width: 799px) {
-    .hideS {
-        display: none;
+@media only screen and (max-aspect-ratio: 182/307) {
+	.hideS {
+		display: none;
     }
-
+	
 	header p {
 		font-size: 3vh;
 	}
+
+	.container a.socials img {
+		height: 22.5vmin;
+	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-aspect-ratio: 513/614) {
+	.container a.text {font-size: 2.75vh;}
+}
+
+@media only screen and (max-aspect-ratio: 246/307) {
+	.container a.text {font-size: 2.5vh;}
+}
+
+@media only screen and (max-aspect-ratio: 675/614) {
+	.presenting {
+		align-self: end;
+		width: 35vh;
+		height: auto;
+	}
+}
+
+@media only screen and (max-aspect-ratio: 236/307) {
+	.presenting {
+		align-self: end;
+		width: 25vh;
+		bottom: 10vh;
+		height: auto;
+	}
+}
+
+@media only screen and (max-aspect-ratio: 410/307) {
     .showM {
         display: initial;
     }
@@ -148,10 +191,5 @@ a {
 	.hideM {
         display: none;
     }
-
-	.presenting {
-		align-self: end;
-		width: 35vh;
-		height: auto;
-	}
 }
+
