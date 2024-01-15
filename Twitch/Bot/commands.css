@@ -1,12 +1,7 @@
-@font-face {
-	font-family: "NoFutura";
-	src: url(../../FuturaBT-MediumCondensed.otf) format("opentype");
-}
-
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "NoFutura";
+	font-family:  "Segoe UI", sans-serif;
 }
 
 header {
